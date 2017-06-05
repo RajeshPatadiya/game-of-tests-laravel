@@ -46,9 +46,11 @@ Created by [Björn Brala](https://www.swis.nl/over-ons/bjorn-brala) ([@bbrala](h
 
 # Installation
 
-1. Require this repository
+1. Require this repository and 
 
-``composer require swisnl/game-of-tests-laravel``
+``composer require swisnl/game-of-tests-laravel php-http/guzzle6-adapter ``
+                                                
+Why php-http/guzzle6-adapter? The GitHub API package is decoupled from any HTTP messaging client with help by HTTPlug. Read about clients in our docs.
 
 2. Add the service provider to ``app.php`` 
 
